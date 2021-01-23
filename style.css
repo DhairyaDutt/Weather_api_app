@@ -42,14 +42,11 @@ table {
 	border-spacing: 0;
 }
 
-body{
-    background-color: coral;
-    display: flex;
-}
 
-.main{
+.box{
     border: 2px solid black;
-    border-radius: 0.2em;
+	border-radius: 0.2em;
+	height: 20em;
 }
 
 html{
@@ -63,4 +60,21 @@ body{
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+}
+
+button{
+	background: none;
+	color: #ff2a60;
+	border: 2px solid;
+	padding: 1em 2em;
+	font-size: 1em;
+	transition: all 0.25s;
+}
+
+button:hover {
+	border-color: #f1ff5c;
+	color: white;
+	box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+	transform: translateY(-0.25em);
+	cursor: pointer;
 }
