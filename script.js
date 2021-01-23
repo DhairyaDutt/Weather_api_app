@@ -2,7 +2,6 @@ var input = document.querySelector('.input_text');
 var main = document.querySelector('#name');
 var temp = document.querySelector('.temp');
 var desc = document.querySelector('.desc');
-var clouds = document.querySelector('.clouds');
 var button= document.querySelector('.submit');
 
 
@@ -15,8 +14,8 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=5
   var descValue = data['weather'][0]['description'];
 
   main.innerHTML = nameValue;
-  desc.innerHTML = "Desc - "+descValue;
-  temp.innerHTML = "Temp - "+tempValue;
+  desc.innerHTML = descValue;
+  temp.innerHTML = tempValue+"&degF";
   input.value ="";
 
 })
