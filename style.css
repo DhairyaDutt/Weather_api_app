@@ -43,16 +43,9 @@ table {
 }
 
 
-.box{
-    border: 2px solid black;
-	border-radius: 0.2em;
-	height: 20em;
-}
 
-html{
-	box-sizing: border-box;
-	font-family: "open sans", sans-serif;
-}
+
+
 
 body{
 	background-color: #60a9ff;
@@ -60,21 +53,69 @@ body{
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	background: url("weather1.jfif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box{
+    border: 2px solid black;
+	border-radius: 1.5em;
+	height: 20em;
+	background-color:rgba(202, 255, 191, 0.6);
+}
+
+html{
+	box-sizing: border-box;
+	font-family: "open sans", sans-serif;
 }
 
 button{
+	border-radius: 2em;
 	background: none;
-	color: #ff2a60;
+	color: #2a9d8f;
 	border: 2px solid;
-	padding: 1em 2em;
+	padding: 0.5em 1em;
 	font-size: 1em;
 	transition: all 0.25s;
 }
 
 button:hover {
-	border-color: #f1ff5c;
+	border-color: #fdffb6;
 	color: white;
 	box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
 	transform: translateY(-0.25em);
 	cursor: pointer;
+}
+
+.input_text{
+	border-radius: 2em;
+	border: 2px solid;
+	padding: 0.5em 1em;
+}
+
+.input{
+	padding: 1em 2em;
+}
+
+.display{
+	padding-top: 2em;;
+}
+
+.display h1{
+	text-align: center;
+	font-size: 3em;
+	font-weight: 700;
+	padding-bottom: 0.6em;;
+}
+
+.display p:nth-of-type(1){
+	text-align: center;
+	font-size: 2em;
+	padding-bottom: 1.5em;
+}
+
+.display p:nth-of-type(2){
+	text-align: center;
+	font-size: 1.5em ;
 }
